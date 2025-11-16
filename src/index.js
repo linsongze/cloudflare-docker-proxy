@@ -3,8 +3,8 @@ addEventListener("fetch", (event) => {
   event.respondWith(handleRequest(event.request));
 });
 
-//const dockerHub = "https://registry-1.docker.io";
-const dockerHub = "https://docker-hub.laigc.com";
+const dockerHub = "https://registry-1.docker.io";
+//const dockerHub = "https://docker-hub.laigc.com";
 const routes = {
   // production
   ["docker." + CUSTOM_DOMAIN]: dockerHub,
